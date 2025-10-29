@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>🌦️ Weather Predictor</h1>
+    <form action="/predict" method="post">
+        <div class="form-group">
+            <label>Location</label>
+            <input type="text" name="location" placeholder="Enter city" required>
+        </div>
+
+        <div class="form-group">
+            <label>Humidity (%)</label>
+            <input type="number" name="humidity" step="0.01" placeholder="e.g., 70" required>
+        </div>
+
+        <div class="form-group">
+            <label>Precipitation (mm)</label>
+            <input type="number" name="precip" step="0.01" placeholder="e.g., 5" required>
+        </div>
+
+        <div class="form-group">
+            <label>Wind Speed (km/h)</label>
+            <input type="number" name="wind" step="0.01" placeholder="e.g., 10" required>
+        </div>
+
+        <button type="submit">Predict</button>
+    </form>
+    <a href="/">🔄 Reset</a>
+</div>

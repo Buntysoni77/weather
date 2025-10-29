@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Canvas for animations -->
+    <canvas id="weather-canvas"></canvas>
+
+    <div class="container result">
+        <h2>📍 Location: {{ location }}</h2>
+        <p>🌡️ Predicted Temperature: <b>{{ temp }} °C</b></p>
+        <p>🌤️ Weather Type: <b>{{ weather }}</b></p>
+        <a href="/">🔙 Make Another Prediction</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='weather.js') }}"></script>
+</body>
+</html>
