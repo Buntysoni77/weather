@@ -1,27 +1,43 @@
-<div class="container">
-    <h1>🌦️ Weather Predictor</h1>
-    <form action="/predict" method="post">
-        <div class="form-group">
-            <label>Location</label>
-            <input type="text" name="location" placeholder="Enter city" required>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Weather Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
 
-        <div class="form-group">
-            <label>Humidity (%)</label>
-            <input type="number" name="humidity" step="0.01" placeholder="e.g., 70" required>
-        </div>
+    <canvas id="weather-canvas"></canvas>
 
-        <div class="form-group">
-            <label>Precipitation (mm)</label>
-            <input type="number" name="precip" step="0.01" placeholder="e.g., 5" required>
-        </div>
+    <div class="container">
+        <h1>🌦️ Weather Predictor</h1>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label>Location</label>
+                <input type="text" name="location" placeholder="Enter city" required>
+            </div>
 
-        <div class="form-group">
-            <label>Wind Speed (km/h)</label>
-            <input type="number" name="wind" step="0.01" placeholder="e.g., 10" required>
-        </div>
+            <div class="form-group">
+                <label>Humidity (%)</label>
+                <input type="number" name="humidity" step="0.01" placeholder="e.g., 70" required>
+            </div>
 
-        <button type="submit">Predict</button>
-    </form>
-    <a href="/">🔄 Reset</a>
-</div>
+            <div class="form-group">
+                <label>Precipitation (mm)</label>
+                <input type="number" name="precip" step="0.01" placeholder="e.g., 5" required>
+            </div>
+
+            <div class="form-group">
+                <label>Wind Speed (km/h)</label>
+                <input type="number" name="wind" step="0.01" placeholder="e.g., 10" required>
+            </div>
+
+            <button type="submit">Predict</button>
+        </form>
+        <a href="/" class="reset-btn">🔄 Reset</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='weather.js') }}"></script>
+</body>
+</html>
