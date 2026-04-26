@@ -1,7 +1,6 @@
 <img width="1896" height="916" alt="Screenshot 2026-04-26 083858" src="https://github.com/user-attachments/assets/fc742307-6811-4155-bc50-f9ea72a9a51f" />
 <img width="1899" height="1002" alt="Screenshot 2026-04-26 084003" src="https://github.com/user-attachments/assets/a9b20759-48ee-4e24-a5d0-e01c5b9adcac" />
-<img width="1899" height="1002" alt="Screenshot 2026-04-26 084003" src="https://github.com/user-attachments/assets/c9af7bbf-c27a-4829-9320-4e1cddff84d4" />
-<img width="1896" height="916" alt="Screenshot 2026-04-26 083858" src="https://github.com/user-attachments/assets/a73d1953-e9a6-449b-b489-8024b2ff6909" />
+
 # 🌦️ Smart Weather Predictor 
 
 An interactive web application built with **Flask** and **Machine Learning** concepts. This project features a dynamic, real-time background that changes based on different weather conditions using the HTML5 Canvas API.
